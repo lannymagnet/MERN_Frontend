@@ -1,0 +1,82 @@
+.question-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  height: 100%;
+}
+
+.question-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  min-height: 75%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.question-actions {
+  height: 10%;
+  border-top: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.options {
+  margin-top: 30px;
+}
+
+.options li {
+  list-style: none;
+  margin-bottom: 10px;
+  marker: "hi";
+}
+.legend-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10%;
+}
+
+hr {
+  color: #e1e1e1;
+  margin: 20px 0px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.button {
+  padding: 4px 16px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.button.review {
+  background: #cb0606;
+}
+
+.button.submit {
+  background: #13a415;
+}
+
+.button.next {
+  background: #155884;
+  margin-left: 2px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.button.prev {
+  background: #155884;
+  margin-right: 2px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+input[type="checkbox"] {
+  accent-color: green;
+}

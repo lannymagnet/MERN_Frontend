@@ -1,0 +1,42 @@
+.legend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.purple {
+  background: #a70692;
+}
+.yellow {
+  background: #ffc107;
+}
+.green {
+  background: #28a745;
+}
+.white {
+  background: #a8a2a2;
+}
+.blue {
+  background: #155884;
+}
+
+@media (max-width: 600px) {
+  .legend {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

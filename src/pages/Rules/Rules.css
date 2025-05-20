@@ -1,0 +1,56 @@
+.rules-card {
+  max-width: 540px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.6s ease;
+}
+
+.rules-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.rules-list {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  line-height: 1.6;
+  color: #444;
+}
+
+.rules-list li {
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .rules-card {
+    padding: 30px 24px;
+  }
+  .rules-title {
+    font-size: 1.6rem;
+  }
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+}

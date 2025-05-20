@@ -1,0 +1,54 @@
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.matrix-header {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 20px -15px 83px -81px grey;
+  padding: 5px;
+  width: 100%;
+  font-weight: bold;
+  justify-content: center;
+  background-color: #e5e5e5;
+}
+
+.matrix-btn {
+  padding: 10px;
+  border-radius: 15px 0px 0px 0px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Status styles */
+.matrix-btn.answered {
+  background-color: #2ecc71;
+  color: white;
+}
+.matrix-btn.visited {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.matrix-btn.not-visited {
+  background-color: #a8a2a2;
+  color: white;
+}
+.matrix-btn.current {
+  background-color: #155884;
+  color: white;
+}
+.matrix-btn.review {
+  background-color: #a70692;
+  color: white;
+}

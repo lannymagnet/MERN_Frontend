@@ -1,0 +1,32 @@
+.primary-btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: #007bff;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.primary-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.primary-btn:not(:disabled):hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.primary-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .primary-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
