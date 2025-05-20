@@ -1,8 +1,8 @@
 .question-panel {
   display: flex;
   flex-direction: column;
-  gap: 0px;
   height: 100%;
+  width: 100%;
 }
 
 .question-card {
@@ -11,32 +11,40 @@
   border-radius: 10px;
   min-height: 75%;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .question-actions {
-  height: 10%;
   border-top: 2px solid #e1e1e1;
   border-bottom: 2px solid #e1e1e1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 40px;
+  padding: 10px 20px;
+  gap: 10px;
 }
 
 .options {
   margin-top: 30px;
+  padding-left: 0;
 }
 
 .options li {
   list-style: none;
   margin-bottom: 10px;
-  marker: "hi";
+  font-size: 1rem;
+  line-height: 1.5;
 }
+
 .legend-indicator {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 10%;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px 0;
 }
 
 hr {
@@ -46,15 +54,17 @@ hr {
 
 .title {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .button {
-  padding: 4px 16px;
+  padding: 6px 16px;
   border: none;
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
-  margin: 0px 10px;
+  margin: 4px;
+  white-space: nowrap;
 }
 
 .button.review {
@@ -67,16 +77,45 @@ hr {
 
 .button.next {
   background: #155884;
-  margin-left: 2px;
   border-radius: 0px 20px 20px 0px;
 }
 
 .button.prev {
   background: #155884;
-  margin-right: 2px;
   border-radius: 20px 0px 0px 20px;
 }
 
 input[type="checkbox"] {
   accent-color: green;
+}
+
+@media (max-width: 768px) {
+  .question-card {
+    padding: 20px;
+  }
+
+  .question-actions {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .legend-indicator {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    border-radius: 10px !important;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .options li {
+    font-size: 0.95rem;
+  }
 }
