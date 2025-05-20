@@ -1,4 +1,4 @@
-import "./userDetail.css";
+import "./UserTable.css";
 
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
